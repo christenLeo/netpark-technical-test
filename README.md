@@ -1,1 +1,1 @@
-## Sign new company form
+## Sign new event form
