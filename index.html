@@ -24,61 +24,62 @@
     <main class="pg_mainContent">
         <h1>Olá bom dia!</h1>
         <h2>Por gentileza preencha os campos com os dados da(o)...</h2>
-        <form class="mainContent_form" id="form">
+        <form class="mainContent_form" id="form" onsubmit="return canSubmit()">
             
             <!--Must have fields-->
             <fieldset>
                 <h4>Empresa</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
             <fieldset>
                 <h4>Negócio</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
             <fieldset>
                 <h4>Financeiro</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
             <fieldset>
                 <h4>Endereço</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
             <fieldset>
                 <h4>Evento</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
 
             <!--Extra fields-->
             <fieldset>
                 <h4>Caso pagamento via terceiros</h4>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
-                <label class="form_fields"><input type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><input name="" type="text"></label>
             </fieldset>
 
             <h4>Caso sinta-se confortável nos deixe algum comentário</h4>
             <label class="form_fields"><textarea></textarea></label>
 
             <!--Google recaptcha-->
-            <div class="g-recaptcha" data-sitekey="6LdI-xEhAAAAAMWxKZ-X8e6Q7XW6iZy0BkBVGjmU"></div>
+            <div id='grecaptcha' class="g-recaptcha" data-sitekey="6LdI-xEhAAAAAMWxKZ-X8e6Q7XW6iZy0BkBVGjmU" data-callback="getUserToken"></div>
+            <p id="grecaptchaError" class="error"></p>
 
-            <button type="submit">Enviar</button>
+            <button id="submitButton" class="form_button" type="submit" disabled>Enviar</button>
         </form>
     </main>
 
