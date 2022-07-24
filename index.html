@@ -29,51 +29,51 @@
             <!--Must have fields-->
             <fieldset>
                 <h4>Empresa</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>Nome:</p><input name="companyName" type="text" placeholder="Ex.: Estacionamento da esquina" required></label>
+                <label class="form_fields"><p>CNPJ:</p><input name="companyCnpj" type="text" placeholder="Ex.: XX. XXX. XXX/0001-XX" required></label>
             </fieldset>
             <fieldset>
                 <h4>Negócio</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>Name:</p><input name="businessName" type="text" placeholder="Ex.: Aluguel de bicicletas" required></label>
+                <label class="form_fields"><p>E-mail:</p><input name="businessEmail" type="email" placeholder="Ex.: negocio@email.com" required></label>
+                <label class="form_fields"><p>Telefone:</p><input name="businessPhone" type="text" placeholder="Ex.: (XX) xxxxx-xxxx" required></label>
             </fieldset>
             <fieldset>
                 <h4>Financeiro</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>Name:</p><input name="financialName" type="text" placeholder="Ex.: financeiro - Aluguel de bicicletas" required></label>
+                <label class="form_fields"><p>E-mail:</p><input name="financialEmail" type="email" placeholder="Ex.: financeiro@email.com" required></label>
+                <label class="form_fields"><p>Telefone:</p><input name="financialPhone" type="text" placeholder="Ex.: (XX) xxxxx-xxxx" required></label>
+                <label class="form_fields"><p>Contrato em PDF:</p><input name="contract" type="file" required></label>
             </fieldset>
             <fieldset>
                 <h4>Endereço</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>Rua:</p><input name="address" type="text" placeholder="Ex.: Rua blabla - Bairro bleble" required></label>
+                <label class="form_fields"><p>Número:</p><input name="addressNumber" type="number" placeholder="Ex.: 574" required></label>
+                <label class="form_fields"><p>Bairro:</p><input name="" type="text" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>Cidade:</p><input name="" type="text" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>Estado:</p><input name="" type="text" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>CEP:</p><input name="" type="text" placeholder="Ex.:" required></label>
             </fieldset>
             <fieldset>
                 <h4>Evento</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>Início:</p><input name="" type="datetime" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>Término:</p><input name="" type="datetime" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>Quantas pessoas foram convidadas?</p><input name="" type="number" placeholder="Ex.:" required></label>
+                <label class="form_fields"><p>Qual será o dia do evento?</p><input name="" type="date" placeholder="Ex.:" required></label>
             </fieldset>
 
             <!--Extra fields-->
             <fieldset>
                 <h4>Caso pagamento via terceiros</h4>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
-                <label class="form_fields"><input name="" type="text"></label>
+                <label class="form_fields"><p>E-mail:</p><input name="" type="text" placeholder="Ex.:"></label>
+                <label class="form_fields"><p>Nome da empresa:</p><input name="" type="text" placeholder="Ex.:"></label>
+                <label class="form_fields"><p>CNPJ:</p><input name="" type="text" placeholder="Ex.:"></label>
+                <label class="form_fields"><p>Nome do contrato:</p><input name="" type="text" placeholder="Ex.:"></label>
+                <label class="form_fields"><p>Email do contrato:</p><input name="" type="text" placeholder="Ex.:"></label>
             </fieldset>
 
             <h4>Caso sinta-se confortável nos deixe algum comentário</h4>
-            <label class="form_fields"><textarea></textarea></label>
+            <label class="form_fields"><textarea placeholder="Foi uma boa experiência?"></textarea></label>
 
             <!--Google recaptcha-->
             <div id='grecaptcha' class="g-recaptcha" data-sitekey="6LdI-xEhAAAAAMWxKZ-X8e6Q7XW6iZy0BkBVGjmU" data-callback="getUserToken"></div>
