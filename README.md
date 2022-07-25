@@ -6,7 +6,7 @@ This a vanilla controlled form that simulates an API call to create an event.
 - [@christenLeo](https://github.com/christenLeo)
 
 ## 📄 Stack
-- HTML%;
+- HTML5;
 - CSS3;
 - Javascript.
 
