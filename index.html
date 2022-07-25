@@ -22,31 +22,31 @@
 </head>
 <body class="pg">
     <main class="pg_mainContent">
-        <h1>Olá bom dia!</h1>
-        <h2>Por gentileza preencha os campos com os dados da(o)...</h2>
+        <h1 class="title">Olá, bom dia!</h1>
+        <h2 class="subtitle" >Por gentileza preencha os campos com os dados da(o)...</h2>
         <form class="mainContent_form" id="form" onsubmit="return canSubmit()">
             
             <!--Must have fields-->
             <fieldset class="fieldContainer">
-                <h4>Empresa</h4>
+                <h4 class="field_title">Empresa</h4>
                 <label class="form_fields"><p>Nome:</p><input name="companyName" type="text" placeholder="Ex.: Estacionamento da esquina" required></label>
                 <label class="form_fields"><p>CNPJ:</p><input name="companyCnpj" type="text" placeholder="Ex.: XX.XXX.XXX/XXXX-XX" required></label>
             </fieldset>
             <fieldset class="fieldContainer">
-                <h4>Negócio</h4>
-                <label class="form_fields"><p>Name:</p><input name="businessName" type="text" placeholder="Ex.: Aluguel de bicicletas" required></label>
+                <h4 class="field_title">Negócio</h4>
+                <label class="form_fields"><p>Nome:</p><input name="businessName" type="text" placeholder="Ex.: Aluguel de bicicletas" required></label>
                 <label class="form_fields"><p>E-mail:</p><input name="businessEmail" type="email" placeholder="Ex.: negocio@email.com" required></label>
                 <label class="form_fields"><p>Telefone:</p><input name="businessPhone" type="text" placeholder="Ex.: (XX) xxxxx-xxxx" required></label>
             </fieldset>
             <fieldset class="fieldContainer">
-                <h4>Financeiro</h4>
-                <label class="form_fields"><p>Name:</p><input name="financialName" type="text" placeholder="Ex.: financeiro - Aluguel de bicicletas" required></label>
+                <h4 class="field_title">Financeiro</h4>
+                <label class="form_fields"><p>Nome:</p><input name="financialName" type="text" placeholder="Ex.: financeiro - Aluguel de bicicletas" required></label>
                 <label class="form_fields"><p>E-mail:</p><input name="financialEmail" type="email" placeholder="Ex.: financeiro@email.com" required></label>
                 <label class="form_fields"><p>Telefone:</p><input name="financialPhone" type="text" placeholder="Ex.: (XX) xxxxx-xxxx" required></label>
                 <label class="form_fields"><p>Contrato em PDF:</p><input name="contract" type="file" required></label>
             </fieldset>
             <fieldset class="fieldContainer">
-                <h4>Endereço</h4>
+                <h4 class="field_title">Endereço</h4>
                 <label class="form_fields"><p>Rua:</p><input name="address" type="text" placeholder="Ex.: Rua blabla - Bairro bleble" required></label>
                 <label class="form_fields"><p>Número:</p><input name="addressNumber" type="number" placeholder="Ex.: 574" required></label>
                 <label class="form_fields"><p>Bairro:</p><input name="county" type="text" placeholder="Ex.: Bacacheri" required></label>
@@ -55,7 +55,7 @@
                 <label class="form_fields"><p>CEP:</p><input name="zipCode" type="text" placeholder="Ex.: XXXXX-XXX" required></label>
             </fieldset>
             <fieldset class="fieldContainer">
-                <h4>Evento</h4>
+                <h4 class="field_title">Evento</h4>
                 <label class="form_fields"><p>Início:</p><input name="timeDayInitial" type="time" required></label>
                 <label class="form_fields"><p>Término:</p><input name="timeDayFinal" type="time" required></label>
                 <label class="form_fields"><p>Quantas pessoas foram convidadas?</p><input name="qtyGuest" type="number" placeholder="Ex.: 20" required></label>
@@ -64,7 +64,7 @@
 
             <!--Extra fields-->
             <fieldset class="fieldContainer">
-                <h4>Caso pagamento via terceiros</h4>
+                <h4 class="field_title">Caso pagamento via terceiros</h4>
                 <label class="form_fields"><p>E-mail:</p><input name="payEmail" type="text" placeholder="Ex.: terceiro@email.com"></label>
                 <label class="form_fields"><p>Nome da empresa:</p><input name="payCompanyName" type="text" placeholder="Ex.: Empresa fictício"></label>
                 <label class="form_fields"><p>CNPJ:</p><input name="payCompanyCnpj" type="text" placeholder="Ex.: XX.XXX.XXX/XXXX-XX"></label>
@@ -72,7 +72,7 @@
                 <label class="form_fields"><p>Email do contrato:</p><input name="" type="text" placeholder="Ex.: empresa@email.com"></label>
             </fieldset>
 
-            <h4>Caso sinta-se confortável nos deixe algum comentário</h4>
+            <h4 class="field_title-comment">Caso sinta-se confortável, nos deixe um comentário:</h4>
             <label class="form_fields"><textarea name="generalObservations" placeholder="Foi uma boa experiência?"></textarea></label>
 
             <!--Google recaptcha-->
